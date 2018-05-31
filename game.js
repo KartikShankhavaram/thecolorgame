@@ -78,11 +78,12 @@ function generateRandomColours(num) {
 }
 
 function reset() {
+  message.textContent = "";
   colors = generateRandomColours(noOfSquares);
   pickedColor = pickColor();
   colorDisplay.textContent = pickedColor;
   applyColors();
-  h1.style.backgroundColor = "#232323"
+  h1.style.backgroundColor = "steelblue"
   resetButton.textContent = "New Colors";
   if(isHard) {
     squares.forEach(square => {
